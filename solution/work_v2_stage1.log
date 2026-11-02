@@ -1,0 +1,40 @@
+[    114s] loaded: train pairs 154,710,959, test pairs 149,465,546
+[    131s] universes: pairs 101,234,216; decoy share in universe records 0.413; S1 per universe 1,105,029 / 1,101,792; rows A=25,295,531 B=75,938,685
+[    131s] recomputing context features inside each universe
+[    521s] extra features
+[    903s] stage 1 GBDT (OOF on part B, predictions for part A and test)
+[    921s]   fold 0: fit rows=15,177,306 pos=0.0744
+[100]	valid_0's binary_logloss: 0.00960578
+[200]	valid_0's binary_logloss: 0.00742641
+[300]	valid_0's binary_logloss: 0.00703795
+[400]	valid_0's binary_logloss: 0.00688063
+[500]	valid_0's binary_logloss: 0.00680431
+[600]	valid_0's binary_logloss: 0.00672889
+[700]	valid_0's binary_logloss: 0.00667713
+[800]	valid_0's binary_logloss: 0.00664536
+[900]	valid_0's binary_logloss: 0.00662434
+[1000]	valid_0's binary_logloss: 0.00660099
+[1100]	valid_0's binary_logloss: 0.00658846
+[1200]	valid_0's binary_logloss: 0.00657946
+[1300]	valid_0's binary_logloss: 0.00656456
+[   1476s]     best_iter=1324 valid_logloss=0.00656
+[   2695s]     top features: cos_combo_gap_q, cos_combo, cos_combo_rank_q, num_jacc, ad_tset, ad_tset_gap_q, cos_name_gap_q, nm_tsort, n_num_q, nm_ratio, nm_jw, legal_conflict, legal_q_empty, len_q, ns_ratio, cos_name, ad_tset_gap_s, num_first_in_s, nm_partial, legal_eq
+[   2695s]   fold 1: fit rows=15,201,774 pos=0.0744
+[100]	valid_0's binary_logloss: 0.00941481
+[200]	valid_0's binary_logloss: 0.0072773
+[300]	valid_0's binary_logloss: 0.00687574
+[400]	valid_0's binary_logloss: 0.00674312
+[500]	valid_0's binary_logloss: 0.00665153
+[600]	valid_0's binary_logloss: 0.00658824
+[700]	valid_0's binary_logloss: 0.00655902
+[800]	valid_0's binary_logloss: 0.00651445
+[900]	valid_0's binary_logloss: 0.00648983
+[1000]	valid_0's binary_logloss: 0.00646511
+[1100]	valid_0's binary_logloss: 0.00645288
+[1200]	valid_0's binary_logloss: 0.00643711
+[1300]	valid_0's binary_logloss: 0.00642975
+[1400]	valid_0's binary_logloss: 0.00642718
+[   3329s]     best_iter=1361 valid_logloss=0.00642
+[   4518s]     top features: cos_combo_gap_q, cos_combo, cos_combo_rank_q, num_jacc, ad_tset_gap_q, cos_name_gap_q, ad_tset, n_num_q, nm_tsort, nm_ratio, nm_jw, legal_conflict, ns_ratio, len_q, legal_q_empty, cos_name, num_first_in_s, nm_partial, alen_q, legal_eq
+[   4575s] stage 1: OOF(B, test-like) F0.5=0.9821 {'India': 0.9774218234469036, 'US': 0.9852907065530099} mode=assign tau=0.65
+[   4575s] tokenizing train records

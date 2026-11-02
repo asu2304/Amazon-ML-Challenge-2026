@@ -1,0 +1,28 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Dataset (private, hosted on Kaggle — see README)
+dataset/
+dataset.zip
+*.zip
+
+# Cached pipeline stages, model weights, features (hundreds of MB each)
+solution/work*/
+*.npy
+*.npz
+*.pt
+*.parquet
+
+# Generated submissions (large TSVs, regenerate with the pipeline)
+solution/output*/
+*.tsv
+*.tsv.gz

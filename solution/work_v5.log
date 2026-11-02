@@ -1,0 +1,29 @@
+[      0s] v4 decision: mode=expf tau=0.2
+[     76s] building stage-3 candidates on train part B
+[    107s]   anchors 5,600,294, unassigned targets 4,132,206, base links 5,620,494
+[    126s]   via name: 13,007,510 (target, anchor) links
+[    144s]   via nosp: 13,024,133 (target, anchor) links
+[    164s]   via addr: 135,520 (target, anchor) links
+[    213s]   stage-3 candidates 4,849,277 for 867,743 targets, positives 0.009
+[    213s] v4 base (validation): F0.5=0.9928 {'India': 0.9938575666965523, 'US': 0.9920634415233646}
+[    218s]   fold 0: best_iter=28
+[    220s]   fold 1: best_iter=2
+[    220s]   top stage-3 features: own_p2, aconf_max, y_best_p2, n_s1_vouched, ad_ys, via_addr, nm_ys, aconf_mean, own_p1, name_anchor_cnt
+[    221s]   tau3=0.3: +14,207 links -> F0.5=0.9916
+[    222s]   tau3=0.4: +9,874 links -> F0.5=0.9920
+[    222s]   tau3=0.5: +6,859 links -> F0.5=0.9923
+[    223s]   tau3=0.6: +3,843 links -> F0.5=0.9926
+[    224s]   tau3=0.7: +1,558 links -> F0.5=0.9927
+[    224s]   tau3=0.8: +726 links -> F0.5=0.9928
+[    225s]   tau3=0.85: +510 links -> F0.5=0.9928
+[    226s]   tau3=0.9: +38 links -> F0.5=0.9928
+[    226s]   tau3=0.95: +0 links -> F0.5=0.9928
+[    227s] v5 (validation): F0.5=0.9928 {'India': 0.9938615857147083, 'US': 0.9920817131996609}  (v4 0.9928), tau3=0.85
+[    268s] building stage-3 candidates on test
+[    320s]   anchors 5,823,982, unassigned targets 4,106,064, base links 5,863,525
+[    340s]   via name: 15,767,258 (target, anchor) links
+[    359s]   via nosp: 15,820,800 (target, anchor) links
+[    381s]   via addr: 739,107 (target, anchor) links
+[    439s]   stage-3 candidates 6,086,691 for 1,243,132 targets
+[    441s] test: v4 links 5,863,525 + stage-3 links 0 (by country {})
+[    804s] wrote output_v5/matching_results.tsv and candidate_pairs.tsv

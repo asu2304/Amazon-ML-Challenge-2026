@@ -1,0 +1,35 @@
+[    123s] loaded: train pairs 154,710,959, test pairs 149,465,546
+[    140s] universes: pairs 101,234,216; decoy share in universe records 0.413; S1 per universe 1,105,029 / 1,101,792; rows A=25,295,531 B=75,938,685
+[    140s] recomputing context features inside each universe
+[    529s] extra features
+[    981s] stage 1: OOF(B, test-like) F0.5=0.9821 {'India': 0.9774218234469036, 'US': 0.9852907065530099} mode=assign tau=0.65
+[   1104s] stage 2 features
+[   2077s]   fold 0: fit rows=15,177,306 pos=0.0744
+[100]	valid_0's binary_logloss: 0.00340678
+[200]	valid_0's binary_logloss: 0.00253822
+[   2176s]     best_iter=241 valid_logloss=0.00253
+[   2580s]     top features: ce, ce_gap_q, p1, p1_gap_q, ce_max_q, p1_max_q, p1_gap_s, p1_sum_s_top, sib_ad_max, p1_sum_q, p1_max_s, cos_combo_gap_q, first_tok_s1_cnt, cos_combo_gap_s, sib_nm_mean, alen_s, sib_both_max, ce_rank_q, ad_tset_rank_s, cos_combo
+[   2580s]   fold 1: fit rows=15,201,774 pos=0.0744
+[100]	valid_0's binary_logloss: 0.00340346
+[200]	valid_0's binary_logloss: 0.00253165
+[   2682s]     best_iter=208 valid_logloss=0.00253
+[   2850s]     top features: ce, ce_gap_q, p1, p1_gap_q, ce_max_q, p1_max_q, p1_gap_s, sib_ad_max, p1_sum_s_top, p1_max_s, p1_sum_q, cos_combo_gap_q, first_tok_s1_cnt, sib_both_max, ce_rank_q, cos_combo_gap_s, sib_both_mean, alen_s, ad_tset_rank_s, sib_nm_mean
+[   2913s] stage 2: OOF(B, test-like) F0.5=0.9903 {'India': 0.9883675874635516, 'US': 0.9916063151736085} mode=expf tau=0.2
+[   3198s] wrote output_v2_1/matching_results.tsv and candidate_pairs.tsv
+[   3251s] pseudo-France: 869,609 confident-match records, 489,952 confident-none records, 20,377,284 rows
+[100]	valid_0's binary_logloss: 0.0020656
+[200]	valid_0's binary_logloss: 0.00117058
+[300]	valid_0's binary_logloss: 0.00103123
+[400]	valid_0's binary_logloss: 0.000921958
+[500]	valid_0's binary_logloss: 0.000825811
+[600]	valid_0's binary_logloss: 0.000741429
+[700]	valid_0's binary_logloss: 0.000669122
+[800]	valid_0's binary_logloss: 0.000603893
+[900]	valid_0's binary_logloss: 0.000544646
+[1000]	valid_0's binary_logloss: 0.000494663
+[1100]	valid_0's binary_logloss: 0.000448812
+[1200]	valid_0's binary_logloss: 0.000407689
+[1300]	valid_0's binary_logloss: 0.000371443
+[1400]	valid_0's binary_logloss: 0.00033881
+[1500]	valid_0's binary_logloss: 0.000308116
+[   5206s]     best_iter=1500 valid_logloss=0.00031

@@ -1,0 +1,26 @@
+[     47s] encoding 12,527,040 train records
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/biencoder.py:93: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/biencoder.py:93: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+[    455s] knn train
+[    598s]   [India] knn: 4,133,346 queries x 883,188 S1
+Traceback (most recent call last):
+  File "/home/hariguru/ashutosh/ML challange/solution/src/v3_retrieve.py", line 118, in <module>
+    main()
+  File "/home/hariguru/ashutosh/ML challange/solution/src/v3_retrieve.py", line 94, in main
+    B = retrieve(rec, E, args.k, gpu=0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hariguru/ashutosh/ML challange/solution/src/v3_retrieve.py", line 49, in retrieve
+    I, V = biencoder.knn(E[qi], E[si], k=k, gpu=gpu)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hariguru/ashutosh/ML challange/solution/src/er/biencoder.py", line 119, in knn
+    v, j = torch.topk((Q @ S.T).float(), k=min(k, S.shape[0]), dim=1)
+                      ^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 40.39 GiB. GPU 0 has a total capacity of 79.25 GiB of which 38.27 GiB is free. Including non-PyTorch memory, this process has 40.96 GiB memory in use. Of the allocated memory 22.11 GiB is allocated by PyTorch, and 18.35 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

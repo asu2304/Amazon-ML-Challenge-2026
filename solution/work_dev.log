@@ -1,0 +1,27 @@
+[     51s] dev universe: 1,251,219 train records
+[     51s] token map: 508 entries, part map: 148 entries
+[     51s] load train_norm.parquet
+[     52s] load train_pairs.parquet
+[     53s] train blocking recall=0.9970 {'India': 0.9960637430285173, 'US': 0.9976604846481569}  pairs/query=24.7
+[     53s] load train_feats.parquet
+[     54s] stage 1
+[     55s]   fold 0: fit rows=6,374,092 pos=0.030
+[100]	valid_0's binary_logloss: 0.0021144
+[200]	valid_0's binary_logloss: 0.00200267
+[     98s]     best_iter=243 valid_logloss=0.00200
+[    109s]     top features: cos_combo_gap_q, cos_combo_rank_q, cos_name_gap_q, ad_tset_gap_q, cos_combo, num_jacc, ns_ratio, ad_tset, len_q, num_first_in_s, ad_tset_gap_s, cos_combo_rank_s, cos_addr, nm_tsort, nm_tset_gap_q
+[    109s]   fold 1: fit rows=6,374,572 pos=0.030
+[100]	valid_0's binary_logloss: 0.00211688
+[200]	valid_0's binary_logloss: 0.00201518
+[300]	valid_0's binary_logloss: 0.00200909
+[    154s]     best_iter=260 valid_logloss=0.00200
+[    474s] stage 1 OOF F0.5=0.9886 (mode=expf, tau=0.65)
+[    474s] stage 2 (listwise features from stage-1 probabilities)
+[    502s]   fold 0: fit rows=6,358,785 pos=0.030
+[100]	valid_0's binary_logloss: 0.00187728
+[    524s]     best_iter=119 valid_logloss=0.00187
+[    535s]     top features: p1_gap_q, p1, p1_max_q, p1_gap_s, p1_rank_s, p1_sum_q, p1_max_s, p1_sum_s_top, cos_name_gap_q, ad_ratio, cos_combo_gap_q, n_cand_q, n_cand_s, alen_s, cos_combo_gap_s
+[    535s]   fold 1: fit rows=6,390,955 pos=0.030
+[100]	valid_0's binary_logloss: 0.00200233
+[    553s]     best_iter=95 valid_logloss=0.00199
+[    656s] stage 2 OOF F0.5=0.9886 {'India': 0.9868163222478196, 'US': 0.9898611741076606} (mode=expf, tau=0.2)

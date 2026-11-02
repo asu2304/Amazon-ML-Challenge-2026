@@ -1,0 +1,9 @@
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==17.0.0
+scipy==1.13.1
+scikit-learn==1.5.2
+rapidfuzz==3.10.1
+anyascii==0.3.2
+lightgbm==4.5.0
+sparse_dot_topn==1.1.5

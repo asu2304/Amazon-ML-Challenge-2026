@@ -1,0 +1,17 @@
+[    23s] normalizing 1,694,445 France test records with French rules
+[    51s] France addresses changed by the new rules: 71.1%
+[    58s] TF-IDF pairs: recomputing features for 21,500,535 France rows
+[   162s]   [France] cosines for 21,500,535 pairs
+[   173s]   features 4,000,000/21,500,535
+[   182s]   features 8,000,000/21,500,535
+[   190s]   features 12,000,000/21,500,535
+[   199s]   features 16,000,000/21,500,535
+[   207s]   features 20,000,000/21,500,535
+[   211s]   features 21,500,535/21,500,535
+[   310s] wrote work_v4/test_feats_fr.parquet
+[   313s] bi-encoder pairs: recomputing features for 11,181,916 France rows
+[   409s]   [France] cosines for 11,181,916 pairs
+[   420s]   features 4,000,000/11,181,916
+[   429s]   features 8,000,000/11,181,916
+[   437s]   features 11,181,916/11,181,916
+[   494s] wrote work_v4/test_bi_feats_fr.parquet

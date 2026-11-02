@@ -1,0 +1,7 @@
+scripts: S2 48,410, S3 51,590; trade names 1,617; matches/S1 mean 3.46; S2 share 0.484
+operation frequencies: {'n_upper': 0.114, 'n_lower': 0.07, 'domain': 0.051, 'trade': 0.016, 'n_drop': 0.557, 'n_add': 0.665, 'dup': 0.054, 'typos': 0.246, 'accent': 0.067, 'reorder': 0.262, 'a_empty': 0.044, 'a_upper': 0.303, 'a_nparts_drop': 0.354, 'a_reorder': 0.396, 'a_zeropad': 0.043, 'a_typos': 0.078, 'a_abbr': 0.388}
+France: region->departments {'Hauts-de-France': ['Nord'], 'Pays de la Loire': ['Loire-Atlantique'], 'Nouvelle-Aquitaine': ['Gironde']} p_dept=0.318 p_region=0.333
+legal forms ['SARL', 'SAS', 'EURL', 'SA', 'SASU', 'SCI', 'Cie', 'EI'] | generic words ['Club', 'Amicale', 'Ecole', 'Maison', 'Centre', 'Comite', 'Union', 'Sportive', 'Amis', 'Pharmacie', 'Parents', 'Établissements', 'Bordeaux', 'Fils', 'Frères']
+synthetic France: S1 75,251, S2 202,416, S3 215,741; records/S1 5.56; decoy share 0.378
+  examples S2: ['glycines amis amis | PAYS DE LA LOIRE, 9 BD. AUGUSTE PÉNEAU', 'GLYCINES AMIS | NANTES, 9 BOULEVARD AUGUSTE PÉNEAU, PAYS DE LA LOIRE', 'Federtion CGV | 20 RUE ARISTIDE BRIAND, SAINT-NAZAIRE', 'Santé Lycée Parents CGV CGV Lycee | 20 R ARISTIDE BRIAND, SAINT-NAZAIRE']
+  examples S3: ['Fetes Amis Sportive | Pays de la Loire, 09 Boulevard Auguste Péneau', 'Glycines Amis | Pays de la Loire, 9 BLVD Auguste Péneau, Nantes', 'sportivelyceecgv.com | Pays de la Loire, 20 Rue Aristide Briand, Saint-Nazaire', 'Sauce Club SAS | 291 F Avenue de Dunkerque, Lille, Hauts-de-France']

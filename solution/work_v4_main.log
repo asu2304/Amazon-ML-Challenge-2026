@@ -1,0 +1,120 @@
+[    114s] loaded: train pairs 154,710,959, test pairs 149,465,546
+[    128s] France patch: 1,694,445 records re-normalized, 21,500,535 TF-IDF pair rows recomputed
+[    153s] France patch: 11,181,916 bi-encoder pair rows recomputed
+[    972s] with bi-encoder candidates: train pairs 235,567,142, test pairs 228,693,568
+[   1009s] universes: pairs 152,494,539; decoy share in universe records 0.413; S1 per universe 1,105,029 / 1,101,792; rows A=38,102,842 B=114,391,697
+[   1009s] recomputing context features inside each universe
+[   1971s] extra features
+[   2472s] stage 1 GBDT (OOF on part B, predictions for part A and test)
+[   2501s]   fold 0: fit rows=22,860,458 pos=0.0498
+[100]	valid_0's binary_logloss: 0.00583605
+[200]	valid_0's binary_logloss: 0.00459643
+[300]	valid_0's binary_logloss: 0.00439879
+[400]	valid_0's binary_logloss: 0.00432862
+[500]	valid_0's binary_logloss: 0.0042884
+[600]	valid_0's binary_logloss: 0.00425624
+[700]	valid_0's binary_logloss: 0.00423723
+[800]	valid_0's binary_logloss: 0.00422037
+[900]	valid_0's binary_logloss: 0.00420576
+[1000]	valid_0's binary_logloss: 0.00419542
+[1100]	valid_0's binary_logloss: 0.00418942
+[1200]	valid_0's binary_logloss: 0.0041825
+[1300]	valid_0's binary_logloss: 0.00417866
+[   3191s]     best_iter=1345 valid_logloss=0.00418
+[   4802s]     top features: cos_bi_gap_q, cos_bi, num_jacc, n_num_q, ns_ratio, ad_tset, legal_conflict, cos_bi_rank_s, cos_name_gap_q, len_q, num_first_in_s, legal_q_empty, ad_ratio, cos_bi_rank_q, ad_tset_gap_q, cos_name, alen_s, legal_eq, alen_q, nm_tsort
+[   4802s]   fold 1: fit rows=22,899,564 pos=0.0498
+[100]	valid_0's binary_logloss: 0.00589272
+[200]	valid_0's binary_logloss: 0.00465176
+[300]	valid_0's binary_logloss: 0.00444831
+[400]	valid_0's binary_logloss: 0.00437188
+[500]	valid_0's binary_logloss: 0.00433234
+[600]	valid_0's binary_logloss: 0.00430557
+[700]	valid_0's binary_logloss: 0.00428365
+[800]	valid_0's binary_logloss: 0.00426787
+[900]	valid_0's binary_logloss: 0.00425649
+[1000]	valid_0's binary_logloss: 0.00424891
+[1100]	valid_0's binary_logloss: 0.00423955
+[   5323s]     best_iter=1075 valid_logloss=0.00424
+[   6637s]     top features: cos_bi_gap_q, cos_bi, num_jacc, ad_tset, ns_ratio, n_num_q, legal_conflict, cos_bi_rank_s, cos_bi_rank_q, len_q, cos_name_gap_q, num_first_in_s, legal_q_empty, ad_ratio, ad_tset_gap_q, cos_name, legal_eq, alen_q, nm_ratio, alen_s
+[   6702s] stage 1: OOF(B, test-like) F0.5=0.9861 {'India': 0.9854582044340828, 'US': 0.9864584382617912} mode=expf tau=0.45
+[   6783s] ce_train: 58,044,446 scores from cache, 6,944,498 pairs to score
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+  gpu0 0/3,472,249 0s
+  gpu0 1,024,000/3,472,249 91s
+  gpu0 2,048,000/3,472,249 197s
+  gpu0 3,072,000/3,472,249 340s
+[   7328s] ce_test: 40,320,525 scores from cache, 9,527,420 pairs to score
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+  gpu0 0/4,763,710 0s
+  gpu0 1,024,000/4,763,710 91s
+  gpu0 2,048,000/4,763,710 197s
+  gpu0 3,072,000/4,763,710 320s
+  gpu0 4,096,000/4,763,710 480s
+[   7955s] ce2_train: 52,059,903 scores from cache, 12,929,041 pairs to score
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+  gpu0 0/6,464,521 0s
+  gpu0 1,024,000/6,464,521 86s
+  gpu0 2,048,000/6,464,521 183s
+  gpu0 3,072,000/6,464,521 288s
+  gpu0 4,096,000/6,464,521 400s
+  gpu0 5,120,000/6,464,521 536s
+  gpu0 6,144,000/6,464,521 711s
+[   8750s] ce2_test: 36,618,183 scores from cache, 13,229,762 pairs to score
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+  gpu0 0/6,614,881 0s
+  gpu0 1,024,000/6,614,881 88s
+  gpu0 2,048,000/6,614,881 189s
+  gpu0 3,072,000/6,614,881 298s
+  gpu0 4,096,000/6,614,881 422s
+  gpu0 5,120,000/6,614,881 572s
+  gpu0 6,144,000/6,614,881 749s
+[   9607s] stage 2 features
+[  10809s]   fold 0: fit rows=22,860,458 pos=0.0498
+[100]	valid_0's binary_logloss: 0.00270147
+[200]	valid_0's binary_logloss: 0.00212235
+[  10923s]     best_iter=215 valid_logloss=0.00212
+[  11115s]     top features: ce2, ce2_gap_q, ce, p1, ce_gap_q, p1_gap_q, p1_max_q, ce2_max_q, p1_max_s, ce_max_q, p1_gap_s, p1_sum_s_top, p1_rank_s, cos_bi, sib_ad_max, p1_sum_q, cos_bi_gap_q, first_tok_s1_cnt, sib_nm_mean, cos_combo_gap_s
+[  11115s]   fold 1: fit rows=22,899,564 pos=0.0498
+[100]	valid_0's binary_logloss: 0.00264186
+[200]	valid_0's binary_logloss: 0.00204367
+[300]	valid_0's binary_logloss: 0.00204245
+[  11247s]     best_iter=250 valid_logloss=0.00204
+[  11460s]     top features: ce2, ce2_gap_q, ce, p1, ce_gap_q, p1_gap_q, p1_max_q, p1_rank_s, p1_sum_s_top, ce_max_q, p1_max_s, p1_gap_s, cos_bi_gap_q, sib_ad_max, p1_sum_q, ce2_max_q, cos_bi, first_tok_s1_cnt, cos_combo_gap_q, cos_combo_gap_s
+[  11514s] stage 2: OOF(B, test-like) F0.5=0.9928 {'India': 0.9938575666965523, 'US': 0.9920634415233646} mode=expf tau=0.2
+[  11851s] wrote output_v4/matching_results.tsv and candidate_pairs.tsv

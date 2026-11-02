@@ -1,0 +1,6 @@
+scripts: S2 48,410, S3 51,590; trade names 1,617; matches/S1 mean 3.46; S2 share 0.484
+operation frequencies: {'n_upper': 0.114, 'n_lower': 0.07, 'domain': 0.051, 'trade': 0.016, 'n_drop': 0.557, 'n_add': 0.665, 'dup': 0.054, 'typos': 0.246, 'accent': 0.067, 'reorder': 0.262, 'a_empty': 0.044, 'a_upper': 0.303, 'a_nparts_drop': 0.354, 'a_reorder': 0.396, 'a_zeropad': 0.043, 'a_typos': 0.078, 'a_abbr': 0.388}
+legal forms ['LLC', 'Inc', 'Inc.', 'Corp', 'PC', 'P.C.', 'L.L.C.', 'PLLC'] | generic words ['Care', 'Associates', 'Group', 'Center', 'Partners', 'Health', 'Clinic', 'Medicine', 'Pediatric', 'Dental', 'Family', 'Global', 'Specialists', 'Capital', 'Physicians']
+synthetic US: S1 75,251, S2 202,498, S3 216,178; records/S1 5.56; decoy share 0.377
+  examples S2: ['LLC BASALT | 25517 FALLING CEDARS COURT, LOUDOUN COUNTY, VA', 'CENTER FEDERAL FEDERAL BASALT | 25517 FALLING CEDARS COURT, LOUDOUN COUNTY, VA', 'BASALT LLC | 25517 FALLING CEDARS COURT, LOUDOUN COUNTY, VA', 'PRIMARY CARE SPECIALISTS | 6040 OAKHAVEN DRIVE, PADUCAH, KY']
+  examples S3: ['Primary Care Specialists | ', 'Primary Care Specialists | 6040 Oakhaven Drive, Paducah, KY', 'partnersdocapital.com | 3075 Barbye Avenue, Grove City, OH', 'Signature Sunrise Inc | IN, Indianapolis, 5157 65th Street']

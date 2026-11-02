@@ -1,0 +1,227 @@
+[    132s] loaded: train pairs 154,710,959, test pairs 149,465,546
+[    149s] universes: pairs 101,234,216; decoy share in universe records 0.413; S1 per universe 1,105,029 / 1,101,792; rows A=25,295,531 B=75,938,685
+[    149s] recomputing context features inside each universe
+[    552s] extra features
+[   1007s] stage 1: OOF(B, test-like) F0.5=0.9821 {'India': 0.9774218234469036, 'US': 0.9852907065530099} mode=assign tau=0.65
+[   1007s] tokenizing train records
+[   1441s] tokenizing test records
+[   1909s] cross-encoder training on 6,000,000 pairs (pos=0.117) with GPUs 2,3
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+step 200/23437 loss=0.1129 24s
+step 400/23437 loss=0.0384 48s
+step 600/23437 loss=0.0183 72s
+step 800/23437 loss=0.0248 96s
+step 1000/23437 loss=0.0513 120s
+step 1200/23437 loss=0.0213 143s
+step 1400/23437 loss=0.0087 167s
+step 1600/23437 loss=0.0288 191s
+step 1800/23437 loss=0.0106 215s
+step 2000/23437 loss=0.0495 239s
+step 2200/23437 loss=0.0290 263s
+step 2400/23437 loss=0.0189 287s
+step 2600/23437 loss=0.0302 311s
+step 2800/23437 loss=0.0094 335s
+step 3000/23437 loss=0.0428 358s
+step 3200/23437 loss=0.0170 382s
+step 3400/23437 loss=0.0130 406s
+step 3600/23437 loss=0.0063 430s
+step 3800/23437 loss=0.0297 454s
+step 4000/23437 loss=0.0519 478s
+step 4200/23437 loss=0.0141 501s
+step 4400/23437 loss=0.0108 525s
+step 4600/23437 loss=0.0039 549s
+step 4800/23437 loss=0.0202 573s
+step 5000/23437 loss=0.0034 597s
+step 5200/23437 loss=0.0031 621s
+step 5400/23437 loss=0.0181 644s
+step 5600/23437 loss=0.0268 668s
+step 5800/23437 loss=0.0074 692s
+step 6000/23437 loss=0.0012 716s
+step 6200/23437 loss=0.0015 740s
+step 6400/23437 loss=0.0004 764s
+step 6600/23437 loss=0.0112 788s
+step 6800/23437 loss=0.0058 811s
+step 7000/23437 loss=0.0100 835s
+step 7200/23437 loss=0.0019 859s
+step 7400/23437 loss=0.0025 883s
+step 7600/23437 loss=0.0805 907s
+step 7800/23437 loss=0.0040 930s
+step 8000/23437 loss=0.0063 954s
+step 8200/23437 loss=0.0021 978s
+step 8400/23437 loss=0.0150 1002s
+step 8600/23437 loss=0.0007 1026s
+step 8800/23437 loss=0.0046 1050s
+step 9000/23437 loss=0.0159 1074s
+step 9200/23437 loss=0.0005 1097s
+step 9400/23437 loss=0.0292 1121s
+step 9600/23437 loss=0.0006 1145s
+step 9800/23437 loss=0.0002 1169s
+step 10000/23437 loss=0.0153 1192s
+step 10200/23437 loss=0.0196 1216s
+step 10400/23437 loss=0.0204 1240s
+step 10600/23437 loss=0.0471 1264s
+step 10800/23437 loss=0.0309 1288s
+step 11000/23437 loss=0.0131 1311s
+step 11200/23437 loss=0.0193 1335s
+step 11400/23437 loss=0.0123 1359s
+step 11600/23437 loss=0.0497 1383s
+step 11800/23437 loss=0.0141 1407s
+step 12000/23437 loss=0.0122 1430s
+step 12200/23437 loss=0.0056 1454s
+step 12400/23437 loss=0.0025 1478s
+step 12600/23437 loss=0.0022 1502s
+step 12800/23437 loss=0.0123 1526s
+step 13000/23437 loss=0.0021 1549s
+step 13200/23437 loss=0.0004 1573s
+step 13400/23437 loss=0.0140 1597s
+step 13600/23437 loss=0.0247 1621s
+step 13800/23437 loss=0.0061 1645s
+step 14000/23437 loss=0.0071 1668s
+step 14200/23437 loss=0.0195 1692s
+step 14400/23437 loss=0.0021 1716s
+step 14600/23437 loss=0.0038 1740s
+step 14800/23437 loss=0.0041 1764s
+step 15000/23437 loss=0.0167 1788s
+step 15200/23437 loss=0.0237 1811s
+step 15400/23437 loss=0.0040 1835s
+step 15600/23437 loss=0.0113 1859s
+step 15800/23437 loss=0.0002 1883s
+step 16000/23437 loss=0.0092 1906s
+step 16200/23437 loss=0.0001 1930s
+step 16400/23437 loss=0.0234 1954s
+step 16600/23437 loss=0.0009 1978s
+step 16800/23437 loss=0.0029 2001s
+step 17000/23437 loss=0.0103 2025s
+step 17200/23437 loss=0.0050 2049s
+step 17400/23437 loss=0.0029 2073s
+step 17600/23437 loss=0.0117 2096s
+step 17800/23437 loss=0.0066 2120s
+step 18000/23437 loss=0.0087 2144s
+step 18200/23437 loss=0.0053 2168s
+step 18400/23437 loss=0.0144 2192s
+step 18600/23437 loss=0.0048 2215s
+step 18800/23437 loss=0.0156 2239s
+step 19000/23437 loss=0.0076 2263s
+step 19200/23437 loss=0.0149 2287s
+step 19400/23437 loss=0.0038 2311s
+step 19600/23437 loss=0.0013 2334s
+step 19800/23437 loss=0.0012 2358s
+step 20000/23437 loss=0.0010 2382s
+step 20200/23437 loss=0.0020 2406s
+step 20400/23437 loss=0.0044 2430s
+step 20600/23437 loss=0.0040 2453s
+step 20800/23437 loss=0.0024 2477s
+step 21000/23437 loss=0.0031 2501s
+step 21200/23437 loss=0.0164 2525s
+step 21400/23437 loss=0.0009 2548s
+step 21600/23437 loss=0.0125 2572s
+step 21800/23437 loss=0.0012 2596s
+step 22000/23437 loss=0.0011 2620s
+step 22200/23437 loss=0.0206 2643s
+step 22400/23437 loss=0.0098 2667s
+step 22600/23437 loss=0.0037 2691s
+step 22800/23437 loss=0.0005 2715s
+step 23000/23437 loss=0.0021 2738s
+step 23200/23437 loss=0.0197 2762s
+step 23400/23437 loss=0.0008 2786s
+[   4752s] cross-encoder inference on 64,288,414 train pairs
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:121: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:121: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+  gpu0 0/32,144,207 0s
+  gpu0 1,024,000/32,144,207 71s
+  gpu0 2,048,000/32,144,207 155s
+  gpu0 3,072,000/32,144,207 242s
+  gpu0 4,096,000/32,144,207 332s
+  gpu0 5,120,000/32,144,207 422s
+  gpu0 6,144,000/32,144,207 516s
+  gpu0 7,168,000/32,144,207 611s
+  gpu0 8,192,000/32,144,207 706s
+  gpu0 9,216,000/32,144,207 806s
+  gpu0 10,240,000/32,144,207 905s
+  gpu0 11,264,000/32,144,207 1006s
+  gpu0 12,288,000/32,144,207 1109s
+  gpu0 13,312,000/32,144,207 1212s
+  gpu0 14,336,000/32,144,207 1319s
+  gpu0 15,360,000/32,144,207 1423s
+  gpu0 16,384,000/32,144,207 1529s
+  gpu0 17,408,000/32,144,207 1638s
+  gpu0 18,432,000/32,144,207 1750s
+  gpu0 19,456,000/32,144,207 1865s
+  gpu0 20,480,000/32,144,207 1983s
+  gpu0 21,504,000/32,144,207 2103s
+  gpu0 22,528,000/32,144,207 2230s
+  gpu0 23,552,000/32,144,207 2363s
+  gpu0 24,576,000/32,144,207 2501s
+  gpu0 25,600,000/32,144,207 2654s
+  gpu0 26,624,000/32,144,207 2813s
+  gpu0 27,648,000/32,144,207 2976s
+  gpu0 28,672,000/32,144,207 3147s
+  gpu0 29,696,000/32,144,207 3326s
+  gpu0 30,720,000/32,144,207 3518s
+  gpu0 31,744,000/32,144,207 3725s
+[   8656s] cross-encoder inference on 49,847,837 test pairs
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:121: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+Some weights of the model checkpoint at intfloat/multilingual-e5-base were not used when initializing XLMRobertaModel: ['pooler.dense.bias', 'pooler.dense.weight']
+- This IS expected if you are initializing XLMRobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing XLMRobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/hariguru/ashutosh/ML challange/solution/src/er/crossenc.py:121: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(ckpt, map_location='cpu'))
+  gpu0 0/24,923,919 0s
+  gpu0 1,024,000/24,923,919 76s
+  gpu0 2,048,000/24,923,919 165s
+  gpu0 3,072,000/24,923,919 256s
+  gpu0 4,096,000/24,923,919 351s
+  gpu0 5,120,000/24,923,919 450s
+  gpu0 6,144,000/24,923,919 549s
+  gpu0 7,168,000/24,923,919 652s
+  gpu0 8,192,000/24,923,919 758s
+  gpu0 9,216,000/24,923,919 862s
+  gpu0 10,240,000/24,923,919 971s
+  gpu0 11,264,000/24,923,919 1082s
+  gpu0 12,288,000/24,923,919 1197s
+  gpu0 13,312,000/24,923,919 1316s
+  gpu0 14,336,000/24,923,919 1436s
+  gpu0 15,360,000/24,923,919 1563s
+  gpu0 16,384,000/24,923,919 1695s
+  gpu0 17,408,000/24,923,919 1832s
+  gpu0 18,432,000/24,923,919 1984s
+  gpu0 19,456,000/24,923,919 2142s
+  gpu0 20,480,000/24,923,919 2304s
+  gpu0 21,504,000/24,923,919 2476s
+  gpu0 22,528,000/24,923,919 2655s
+  gpu0 23,552,000/24,923,919 2846s
+  gpu0 24,576,000/24,923,919 3056s
+[  11807s] stage 2 features
+[  12703s]   fold 0: fit rows=15,177,306 pos=0.0744
+[100]	valid_0's binary_logloss: 0.00340678
+[200]	valid_0's binary_logloss: 0.00253822
+[  12793s]     best_iter=241 valid_logloss=0.00253
+[  13190s]     top features: ce, ce_gap_q, p1, p1_gap_q, ce_max_q, p1_max_q, p1_gap_s, p1_sum_s_top, sib_ad_max, p1_sum_q, p1_max_s, cos_combo_gap_q, first_tok_s1_cnt, cos_combo_gap_s, sib_nm_mean, alen_s, sib_both_max, ce_rank_q, ad_tset_rank_s, cos_combo
+[  13190s]   fold 1: fit rows=15,201,774 pos=0.0744
+[100]	valid_0's binary_logloss: 0.00340346
+[200]	valid_0's binary_logloss: 0.00253165
+[  13265s]     best_iter=208 valid_logloss=0.00253
+[  13390s]     top features: ce, ce_gap_q, p1, p1_gap_q, ce_max_q, p1_max_q, p1_gap_s, sib_ad_max, p1_sum_s_top, p1_max_s, p1_sum_q, cos_combo_gap_q, first_tok_s1_cnt, sib_both_max, ce_rank_q, cos_combo_gap_s, sib_both_mean, alen_s, ad_tset_rank_s, sib_nm_mean
+[  13445s] stage 2: OOF(B, test-like) F0.5=0.9903 {'India': 0.9883675874635516, 'US': 0.9916063151736085} mode=expf tau=0.2
+[  13701s] wrote output_v2/matching_results.tsv and candidate_pairs.tsv

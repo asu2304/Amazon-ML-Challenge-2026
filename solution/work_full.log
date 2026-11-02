@@ -1,0 +1,145 @@
+[     69s] learning name-token map and address-part map from train labels
+[    117s] token map: 517 entries, part map: 310 entries
+[    117s] normalizing train (12,527,040 records)
+[    192s] normalizing test (11,702,133 records)
+[    265s] blocking train
+[   1163s]   [India] name : |Q|=4,133,346 |S1|=883,188 vocab=28,653 pairs=41,329,570 (894s)
+[   3041s]   [India] addr : |Q|=4,133,346 |S1|=883,188 vocab=15,261 pairs=40,048,740 (1878s)
+[   3490s]   [India] combo: |Q|=4,133,346 |S1|=883,188 vocab=384,469 pairs=41,316,884 (449s)
+[   3776s]   [India] union pairs=61,976,399  per query=15.0
+[   7439s]   [US] name : |Q|=6,186,873 |S1|=1,323,633 vocab=37,200 pairs=61,865,431 (3663s)
+[  11272s]   [US] addr : |Q|=6,186,873 |S1|=1,323,633 vocab=13,626 pairs=59,647,840 (3834s)
+[  11971s]   [US] combo: |Q|=6,186,873 |S1|=1,323,633 vocab=328,685 pairs=61,854,043 (699s)
+[  12346s]   [US] union pairs=92,734,560  per query=15.0
+[  12376s] train blocking recall=0.9855 {'India': 0.9770484956254292, 'US': 0.9911919173916823}  pairs/query=15.0
+[  12376s] features train (154,710,959 pairs)
+[  12387s]   features 4,000,000/154,710,959
+[  12398s]   features 8,000,000/154,710,959
+[  12409s]   features 12,000,000/154,710,959
+[  12420s]   features 16,000,000/154,710,959
+[  12431s]   features 20,000,000/154,710,959
+[  12442s]   features 24,000,000/154,710,959
+[  12454s]   features 28,000,000/154,710,959
+[  12465s]   features 32,000,000/154,710,959
+[  12476s]   features 36,000,000/154,710,959
+[  12487s]   features 40,000,000/154,710,959
+[  12498s]   features 44,000,000/154,710,959
+[  12509s]   features 48,000,000/154,710,959
+[  12521s]   features 52,000,000/154,710,959
+[  12532s]   features 56,000,000/154,710,959
+[  12543s]   features 60,000,000/154,710,959
+[  12553s]   features 64,000,000/154,710,959
+[  12563s]   features 68,000,000/154,710,959
+[  12574s]   features 72,000,000/154,710,959
+[  12584s]   features 76,000,000/154,710,959
+[  12595s]   features 80,000,000/154,710,959
+[  12605s]   features 84,000,000/154,710,959
+[  12615s]   features 88,000,000/154,710,959
+[  12626s]   features 92,000,000/154,710,959
+[  12636s]   features 96,000,000/154,710,959
+[  12646s]   features 100,000,000/154,710,959
+[  12656s]   features 104,000,000/154,710,959
+[  12667s]   features 108,000,000/154,710,959
+[  12677s]   features 112,000,000/154,710,959
+[  12687s]   features 116,000,000/154,710,959
+[  12698s]   features 120,000,000/154,710,959
+[  12708s]   features 124,000,000/154,710,959
+[  12718s]   features 128,000,000/154,710,959
+[  12728s]   features 132,000,000/154,710,959
+[  12738s]   features 136,000,000/154,710,959
+[  12749s]   features 140,000,000/154,710,959
+[  12759s]   features 144,000,000/154,710,959
+[  12769s]   features 148,000,000/154,710,959
+[  12779s]   features 152,000,000/154,710,959
+[  12786s]   features 154,710,959/154,710,959
+[  13551s] blocking test
+[  13611s]   [France] name : |Q|=1,434,993 |S1|=259,452 vocab=20,245 pairs=14,337,143 (56s)
+[  13671s]   [France] addr : |Q|=1,434,993 |S1|=259,452 vocab=10,462 pairs=13,909,795 (60s)
+[  13694s]   [France] combo: |Q|=1,434,993 |S1|=259,452 vocab=84,276 pairs=14,327,879 (23s)
+[  13766s]   [France] union pairs=21,500,535  per query=15.0
+[  14475s]   [India] name : |Q|=4,717,565 |S1|=809,986 vocab=29,034 pairs=47,170,838 (709s)
+[  15930s]   [India] addr : |Q|=4,717,565 |S1|=809,986 vocab=15,240 pairs=45,996,070 (1454s)
+[  16288s]   [India] combo: |Q|=4,717,565 |S1|=809,986 vocab=375,337 pairs=47,159,801 (358s)
+[  16586s]   [India] union pairs=70,741,324  per query=15.0
+[  17070s]   [US] name : |Q|=3,817,031 |S1|=663,106 vocab=34,000 pairs=38,168,041 (483s)
+[  17538s]   [US] addr : |Q|=3,817,031 |S1|=663,106 vocab=13,031 pairs=37,066,070 (468s)
+[  17651s]   [US] combo: |Q|=3,817,031 |S1|=663,106 vocab=234,293 pairs=38,160,912 (113s)
+[  17881s]   [US] union pairs=57,223,687  per query=15.0
+[  17910s] features test (149,465,546 pairs)
+[  17919s]   features 4,000,000/149,465,546
+[  17929s]   features 8,000,000/149,465,546
+[  17940s]   features 12,000,000/149,465,546
+[  17950s]   features 16,000,000/149,465,546
+[  17960s]   features 20,000,000/149,465,546
+[  17970s]   features 24,000,000/149,465,546
+[  17982s]   features 28,000,000/149,465,546
+[  17993s]   features 32,000,000/149,465,546
+[  18004s]   features 36,000,000/149,465,546
+[  18016s]   features 40,000,000/149,465,546
+[  18027s]   features 44,000,000/149,465,546
+[  18039s]   features 48,000,000/149,465,546
+[  18050s]   features 52,000,000/149,465,546
+[  18061s]   features 56,000,000/149,465,546
+[  18072s]   features 60,000,000/149,465,546
+[  18083s]   features 64,000,000/149,465,546
+[  18095s]   features 68,000,000/149,465,546
+[  18106s]   features 72,000,000/149,465,546
+[  18117s]   features 76,000,000/149,465,546
+[  18128s]   features 80,000,000/149,465,546
+[  18138s]   features 84,000,000/149,465,546
+[  18150s]   features 88,000,000/149,465,546
+[  18161s]   features 92,000,000/149,465,546
+[  18171s]   features 96,000,000/149,465,546
+[  18181s]   features 100,000,000/149,465,546
+[  18192s]   features 104,000,000/149,465,546
+[  18202s]   features 108,000,000/149,465,546
+[  18212s]   features 112,000,000/149,465,546
+[  18223s]   features 116,000,000/149,465,546
+[  18233s]   features 120,000,000/149,465,546
+[  18243s]   features 124,000,000/149,465,546
+[  18253s]   features 128,000,000/149,465,546
+[  18264s]   features 132,000,000/149,465,546
+[  18275s]   features 136,000,000/149,465,546
+[  18285s]   features 140,000,000/149,465,546
+[  18296s]   features 144,000,000/149,465,546
+[  18306s]   features 148,000,000/149,465,546
+[  18310s]   features 149,465,546/149,465,546
+[  19064s] stage 1
+[  19068s]   fold 0: fit rows=23,186,411 pos=0.049
+[100]	valid_0's binary_logloss: 0.00650383
+[200]	valid_0's binary_logloss: 0.005771
+[300]	valid_0's binary_logloss: 0.00558516
+[400]	valid_0's binary_logloss: 0.00550229
+[500]	valid_0's binary_logloss: 0.00544143
+[600]	valid_0's binary_logloss: 0.00539927
+[700]	valid_0's binary_logloss: 0.00536539
+[800]	valid_0's binary_logloss: 0.0053406
+[  19407s]     best_iter=800 valid_logloss=0.00534
+[  20281s]     top features: cos_combo_gap_q, cos_combo_rank_q, num_jacc, cos_name_gap_q, n_num_q, ad_tset_gap_q, nm_tsort, ad_tset, legal_conflict, cos_combo_rank_s, ns_ratio, ad_tset_gap_s, len_q, legal_eq, cos_name
+[  20282s]   fold 1: fit rows=23,227,196 pos=0.049
+[100]	valid_0's binary_logloss: 0.00640753
+[200]	valid_0's binary_logloss: 0.0056994
+[300]	valid_0's binary_logloss: 0.00552299
+[400]	valid_0's binary_logloss: 0.00541514
+[500]	valid_0's binary_logloss: 0.00535871
+[600]	valid_0's binary_logloss: 0.00530611
+[700]	valid_0's binary_logloss: 0.00527544
+[800]	valid_0's binary_logloss: 0.00524437
+[  20612s]     best_iter=799 valid_logloss=0.00524
+[  22091s] stage 1 OOF F0.5=0.9780 (mode=expf, tau=0.65)
+[  22091s] stage 2 (listwise features from stage-1 probabilities)
+[  22418s]   fold 0: fit rows=23,176,687 pos=0.049
+[100]	valid_0's binary_logloss: 0.00469991
+[200]	valid_0's binary_logloss: 0.0046429
+[300]	valid_0's binary_logloss: 0.00462427
+[400]	valid_0's binary_logloss: 0.0046151
+[500]	valid_0's binary_logloss: 0.00460914
+[  22640s]     best_iter=476 valid_logloss=0.00461
+[  23061s]     top features: p1, p1_gap_q, p1_max_q, p1_gap_s, p1_rank_s, p1_max_s, p1_sum_s_top, p1_sum_q, cos_combo_rank_s, cos_combo_gap_q, ad_tset_gap_q, cos_name_gap_q, alen_q, n_cand_s, alen_s
+[  23061s]   fold 1: fit rows=23,236,566 pos=0.049
+[100]	valid_0's binary_logloss: 0.00486014
+[200]	valid_0's binary_logloss: 0.00479141
+[300]	valid_0's binary_logloss: 0.00478579
+[  23227s]     best_iter=318 valid_logloss=0.00478
+[  24376s] stage 2 OOF F0.5=0.9797 {'India': 0.9748864612069564, 'US': 0.98295613537373} (mode=expf, tau=0.2)
+[  24655s] wrote output/matching_results.tsv and candidate_pairs.tsv
